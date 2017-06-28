@@ -62,7 +62,7 @@ public class Homework6 {
                 }
             }
         while ((menuChoice <= 4) && (menuChoice > 0));
-        System.out.println("Please enter correct number\n");*/
+        System.out.println("Please enter correct number\n");
         
         System.out.println("Task 2");
         System.out.println("Calculate percents of positive, negative and zeroes from entered 10 numbers");
@@ -82,12 +82,10 @@ public class Homework6 {
                 {
                     zeroCounter++;
                 }
-            System.out.println("Counted positive " + positiveCounter);
-            System.out.println("Counted negative " + negativeCounter);
-            System.out.println("Counted zero " + zeroCounter);
-            
         }
-        
+        System.out.println("Total positive numbers is " + (((positiveCounter*100)/10)) + " percents"
+                + "\n" + "\nTotal negative numbers is " + (((negativeCounter*100)/10)) + " percents"
+                        + "\n" + "\nTotal zero values is " + (((zeroCounter*100)/10))+ " percents\n");
         
         
         
