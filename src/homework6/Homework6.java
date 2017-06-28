@@ -23,13 +23,14 @@ public class Homework6 {
         double calcValue2 = 0;
         int positiveCounter = 0;
         int negativeCounter = 0;
+        int checkedNumber = 0;
         int odd_evenValue = 0;
         int evenCounter = 0;
         int oddCounter = 0;
         int zeroCounter = 0;
         
         Scanner in = new Scanner(System.in); 
-        System.out.println("Task 1");
+       /* System.out.println("Task 1");
         System.out.println("Simple calc with do-while");
         
         do
@@ -124,8 +125,15 @@ public class Homework6 {
                 
             }
            System.out.println(" ");
-        }
+        }*/
         
+        System.out.println("Task 5");
+        System.out.println("Display simple numbers range");
+        
+        for (int i = 0; i < 100; i++) 
+        {
+            
+        }
         
     }
     
