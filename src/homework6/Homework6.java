@@ -21,10 +21,14 @@ public class Homework6 {
         int menuChoice = 0;
         double calcValue1 = 0;
         double calcValue2 = 0;
+        int positiveCounter = 0;
+        int negativeCounter = 0;
+        int zeroCounter = 0;
         
-        System.out.println("Task 1");
-        System.out.println("Simple calc with do-while");
         Scanner in = new Scanner(System.in); 
+        /*System.out.println("Task 1");
+        System.out.println("Simple calc with do-while");
+        
         do
             {
                 System.out.println("Please enter desired action\n 1 - Addition \n 2 - Substraction \n 3 - Multiplication \n 4 - Division");
@@ -58,11 +62,36 @@ public class Homework6 {
                 }
             }
         while ((menuChoice <= 4) && (menuChoice > 0));
-        System.out.println("Please enter correct number\n");
+        System.out.println("Please enter correct number\n");*/
+        
+        System.out.println("Task 2");
+        System.out.println("Calculate percents of positive, negative and zeroes from entered 10 numbers");
+        for (int i = 0; i < 10; i++) 
+        {
+            System.out.println("Please enter number");
+            calcValue1 = in.nextDouble();  
+            if (calcValue1 > 0)
+                {
+                    positiveCounter++;
+                }
+            else if (calcValue1 < 0)
+                {
+                    negativeCounter++;
+                }
+            else
+                {
+                    zeroCounter++;
+                }
+            System.out.println("Counted positive " + positiveCounter);
+            System.out.println("Counted negative " + negativeCounter);
+            System.out.println("Counted zero " + zeroCounter);
+            
+        }
         
         
         
-        System.out.println("Task 4");
+        
+       /* System.out.println("Task 4");
         System.out.println("Display multiplication table");
         
         for (int i = 0; i <= 10; i++) 
@@ -76,7 +105,7 @@ public class Homework6 {
                 
             }
            System.out.println(" ");
-        }
+        }*/
         
         
     }
