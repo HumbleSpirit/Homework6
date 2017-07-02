@@ -28,6 +28,7 @@ public class Homework6 {
         int evenCounter = 0;
         int oddCounter = 0;
         int zeroCounter = 0;
+        int starsNumber = 0;
         
         
         Scanner in = new Scanner(System.in); 
@@ -148,8 +149,20 @@ public class Homework6 {
                         System.out.print(i + " ");
                     }
             }
-        System.out.print("\n");*/
+        System.out.print("\n");
        
+        System.out.println("Task 6");
+        System.out.println("Display square with desired number of stars");
+        starsNumber = in.nextInt();
+        for (int i = 0; i < starsNumber; i++) 
+            {
+                
+                for (int j = 0; j < starsNumber; j++) 
+                {
+                    System.out.print(" * ");
+                }
+                System.out.println("");
+            }*/
         
     }
 }
