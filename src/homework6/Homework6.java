@@ -156,12 +156,29 @@ public class Homework6 {
         starsNumber = in.nextInt();
         for (int i = 0; i < starsNumber; i++) 
             {
-                
                 for (int j = 0; j < starsNumber; j++) 
                 {
                     System.out.print(" * ");
                 }
                 System.out.println("");
+            }
+       
+        System.out.println("Task 7");
+        System.out.println("Display square with desired number of stars with empty space inside");
+        starsNumber = in.nextInt();
+        for (int i = 0; i < starsNumber; i++) 
+            {
+                for (int j = 0; j < starsNumber; j++) 
+                    if(i != 0 && i != starsNumber -1 && j > 0 && j < starsNumber -1)
+                    {
+                        System.out.print(" ");
+                    }
+                    else 
+                    {
+                        System.out.print("*");
+                    }
+                System.out.println("");
+            
             }*/
         
     }
