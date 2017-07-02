@@ -179,6 +179,32 @@ public class Homework6 {
                     }
                 System.out.println("");
             
+            }
+       
+        System.out.println("Task 8");
+        System.out.println("Display square with desired number of stars with cross inside");
+        starsNumber = in.nextInt();
+        for (int i = 0; i < starsNumber; i++) 
+            {
+                for (int j = 0; j < starsNumber; j++) 
+                    if(i == 11 ) 
+                    {
+                        System.out.print("*");  
+                    }
+                    else if (j == 10)
+                    {
+                        System.out.print("*");  
+                    }
+                    else if(i != 0 && i != starsNumber -1 && j > 0 && j < starsNumber -1)
+                    {
+                        System.out.print(" ");
+                    }
+                    else 
+                    {
+                        System.out.print("*");
+                    }
+                System.out.println("");
+            
             }*/
         
     }
