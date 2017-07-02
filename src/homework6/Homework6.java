@@ -29,6 +29,7 @@ public class Homework6 {
         int oddCounter = 0;
         int zeroCounter = 0;
         
+        
         Scanner in = new Scanner(System.in); 
        /* System.out.println("Task 1");
         System.out.println("Simple calc with do-while");
@@ -125,16 +126,36 @@ public class Homework6 {
                 
             }
            System.out.println(" ");
-        }*/
-        
-        System.out.println("Task 5");
-        System.out.println("Display simple numbers range");
-        
-        for (int i = 0; i < 100; i++) 
-        {
-            
         }
         
+        System.out.println("Task 5");
+        System.out.println("Display prime numbers range to 100");
+            
+        for(int i = 2; i < 100; i++)
+            {
+            boolean numberToCheck= true;    
+
+            for(int j = 2; j < i ; j++)
+               {
+                    if(i % j == 0)
+                        {
+                            numberToCheck = false;
+                            break;
+                        }
+                }
+                if(numberToCheck == true)
+                    {
+                        System.out.print(i + " ");
+                    }
+            }
+        System.out.print("\n");*/
+       
+        
     }
-    
 }
+        
+    
+
+    
+    
+
