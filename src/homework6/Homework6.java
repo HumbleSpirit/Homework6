@@ -205,10 +205,10 @@ public class Homework6 {
                     }
                 System.out.println("");
             
-            }*/
+            }
         
         System.out.println("Task 9");
-        System.out.println("Display square with desired number of stars with filled corners inside");
+        System.out.println("Display square with desired number of stars with empty corners inside");
         System.out.println("Please enter even number for rectangle size");
         starsNumber = in.nextInt();
         for (int i = 0; i < starsNumber; i++)
@@ -241,6 +241,30 @@ public class Homework6 {
                             }
                     }
                        System.out.println();
+            }*/
+        
+        System.out.println("Task 10");
+        System.out.println("Display square with desired number of stars with filled corners inside");
+        System.out.println("Please enter odd number for rectangle size");
+        starsNumber = in.nextInt();
+        for (int i = 0; i < starsNumber; i++)
+            {
+                for (int j = 0; j < starsNumber; j++)
+                    {
+                        if (((  i > 0 && i < starsNumber / 3) &&(j > 0 && j < starsNumber / 3))
+                           || ((i > 2 * starsNumber / 3 - 1 && i <= starsNumber - 1) && (j >= 0 && j < starsNumber / 3)) 
+                           || ((i > 0 && i < starsNumber / 3) && (j > 2  * starsNumber / 3 - 1 && j <= starsNumber)) 
+                           || ((i > 2 * starsNumber / 3 - 1 && i <= starsNumber) &&(j > 2 * starsNumber / 3 - 1  && j <= starsNumber)) 
+                           || ( i == 0 || i == (starsNumber - 1) || j == 0 || j == (starsNumber - 1)))
+                            {
+                                System.out.print("*");
+                            }
+                        else 
+                            {
+                                System.out.print(" ");
+                            }
+                    }     
+                System.out.println();
             }
     }
 }
