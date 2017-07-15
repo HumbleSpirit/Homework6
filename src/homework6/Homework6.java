@@ -32,7 +32,7 @@ public class Homework6 {
         
         
         Scanner in = new Scanner(System.in); 
-        /*System.out.println("Task 1");
+        System.out.println("Task 1");
         System.out.println("Simple calc with do-while");
         
         do
@@ -241,7 +241,7 @@ public class Homework6 {
                             }
                     }
                        System.out.println();
-            }*/
+            }
         
         System.out.println("Task 10");
         System.out.println("Display square with desired number of stars with filled corners inside");
@@ -251,7 +251,7 @@ public class Homework6 {
             {
                 for (int j = 0; j < starsNumber; j++)
                     {
-                        if (((  i > 0 && i < starsNumber / 3) &&(j > 0 && j < starsNumber / 3))
+                        if (((  i > 0 && i < starsNumber / 3) && (j > 0 && j < starsNumber / 3))
                            || ((i > 2 * starsNumber / 3 - 1 && i <= starsNumber - 1) && (j >= 0 && j < starsNumber / 3)) 
                            || ((i > 0 && i < starsNumber / 3) && (j > 2  * starsNumber / 3 - 1 && j <= starsNumber)) 
                            || ((i > 2 * starsNumber / 3 - 1 && i <= starsNumber) &&(j > 2 * starsNumber / 3 - 1  && j <= starsNumber)) 
