@@ -209,60 +209,40 @@ public class Homework6 {
         
         System.out.println("Task 9");
         System.out.println("Display square with desired number of stars with filled corners inside");
-        System.out.println("Please enter odd number for rectangle size");
+        System.out.println("Please enter even number for rectangle size");
         starsNumber = in.nextInt();
         for (int i = 0; i < starsNumber; i++)
             {
                 for (int j = 0; j < starsNumber; j++)
                     {
-                        if ( i == 0 || i == (starsNumber - 1) || j == 0 || j == starsNumber - 1)
+                        if (i == 0 || i == (starsNumber - 1) || j == 0 || j == starsNumber - 1) 
                             {
-                                System.out.print("*");
+                                System.out.print("*"); // Draw outer shell
                             }
-                        else if ((i >= 0 && i == starsNumber / 3) && (j >= 0 && j < starsNumber / 3 + 1))
+                        else if (((i >= 0 && i == starsNumber / 3) && (j >= 0 && j < starsNumber / 3 + 1)) || (( i >= 0 && i <= starsNumber / 3) && ( j >= 0 && j == starsNumber / 3)))
                             {
-                                System.out.print("*");
+                                System.out.print("*"); // Draw top left corner
                             }
-                        else if ((i >= 0 && i == starsNumber / 3) && (j > starsNumber * 2/3 && j <= starsNumber)) 
+                        else if (((i >= 0 && i == starsNumber / 3) && (j > starsNumber * 2 / 3 && j <= starsNumber)) || ((i >= 0 && i <= starsNumber / 3) && (j >= 0 && j == 2 * starsNumber / 3)))
                             {
-                                System.out.print("*");
+                                System.out.print("*"); // Draw top right corner
                             } 
-                        else if(( i >= 0 && i <= starsNumber / 3) && ( j >= 0 && j == starsNumber / 3)) //Левая вертикаль верх
+                        else if (((i > 2 * starsNumber / 3 - 2 && i <= starsNumber) && (j >= 0 && j == starsNumber / 3)) || ((i > 2 * starsNumber / 3 - 2 && i <= starsNumber) && (j >= 0 && j == 2 * starsNumber / 3)))//Левая вертикаль низ
                             {
-                          System.out.print("*");
-                            }
-                        else if ((i>2*starsNumber/3-2 && i<=starsNumber)&&(j>=0 && j==starsNumber/3)) //Левая вертикаль низ
-                            {
-                          System.out.print("*");
+                                System.out.print("*"); // Draw bottom vertical lines
                             } 
-                        else if((i>=0 && i<=starsNumber/3) && (j>=0 && j==2*starsNumber/3)) //Правая вертикаль верх
+                        else if (((i >= 0 && i == 2 * starsNumber / 3 - 1) && (j > 2 * starsNumber / 3 - 1 && j <= starsNumber)) || ((i >= 0 && i == 2 * starsNumber / 3 - 1) && (j >= 0 && j <= starsNumber / 3 - 1))) //Правая горизонт низ
                             {
-                          System.out.print("*");
-                            }
-                        else if ((i>2*starsNumber/3-2 && i<=starsNumber)&&(j>=0 && j==2*starsNumber/3)) //Левая вертикаль низ
-                            {
-                          System.out.print("*");
+                                System.out.print("*"); //Draw bottom horizontal lines
                             } 
-                        else if ((i>=0 && i==2*starsNumber/3-1)&& (j>2*starsNumber/3-1 && j<=starsNumber)) //Правая горизонт низ
-                            {
-                          System.out.print("*");
-                            } 
-                        else if((i>=0 && i==2*starsNumber/3-1) && (j>=0 && j<=starsNumber/3-1)) //Левая горизонт низ
-                            {
-                          System.out.print("*");
-                            }
                         else
                             {
-                              System.out.print(" ");    
+                                System.out.print(" "); //Draw inner empty spaces
                             }
                     }
                        System.out.println();
-
-
-        
-       
+            }
     }
-}
 }
     
 
